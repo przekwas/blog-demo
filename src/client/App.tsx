@@ -5,6 +5,7 @@ import Navbah from './components/Navbah';
 import Home from './views/Home';
 import Compose from './views/Compose';
 import Details from './views/Details';
+import Admin from './views/Admin';
 
 const App: React.FC<AppProps> = props => {
 	return (
@@ -19,6 +20,9 @@ const App: React.FC<AppProps> = props => {
 				</Route>
 				<Route exact path="/details/:blogid">
 					<Details />
+				</Route>
+				<Route exact path="/admin/:blogid">
+					<Admin />
 				</Route>
 			</Switch>
 		</BrowserRouter>
